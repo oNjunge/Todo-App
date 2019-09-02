@@ -3,7 +3,7 @@ import './TodoList.css'
 
 class TodoList extends Component{
     //componentDidUpdate() {
-    //    this.props.inputElement.current.focus()
+      //  this.props.inputElement.current.focus()
     //}
     render(){
         return (
@@ -11,7 +11,7 @@ class TodoList extends Component{
                 <div className="header">
                     <form onSubmit={this.props.addItem}>             
                         <input placeholder="Enter Task Name"
-                        ref = {this.props.inputElement}
+                        ref={this.inputElement}
                         value={this.props.currentItem.text}
                         onChange={this.props.handleInput}/>
                         <button type="submit">Add Task</button>
